@@ -1,7 +1,7 @@
 <?php
 use Restserver\libraries\REST_Controller;
 
-class kuis extends REST_Controller
+class Kuis extends REST_Controller
   {
     function __construct()
     {

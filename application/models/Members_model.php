@@ -14,6 +14,15 @@ class Members_model extends CI_Model
     $query=$this->db->get();
     return $query->result();
   }
+
+  public function login($email)
+  {
+    $this->db->where('email',$email);
+    $this->db->from('member');
+
+    $query=$this->db->get();
+    return $query->result();
+  }
 }
 
  ?>
